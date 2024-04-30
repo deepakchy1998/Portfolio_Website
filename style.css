@@ -1,0 +1,340 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body,
+html {
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.navbar > div li a {
+	color: black;
+}
+.navbar > div li a:hover {
+	background-color: #0d6efd;
+	border-radius: 8px;
+	color: white;
+}
+.navbar-nav li a:hover {
+	color: white;
+}
+
+/* Css for Portfolio page */
+
+/* Css Code for Slider  */
+
+.slider {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.intro > h2:hover {
+	text-decoration: underline;
+}
+
+.photo img {
+	transition: all 1s ease-in-out;
+	transform: scale(1);
+}
+
+.photo img {
+	width: 200px;
+	height: 200px; /* This will be applied */
+	border-radius: 50%;
+	border: 3px solid red;
+}
+.photo img:hover {
+	transition: all 1s ease-in-out;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.resume ul li,
+a {
+	list-style: none;
+	text-decoration: none;
+}
+
+.quotes {
+	transition: all 1s ease-in-out;
+	transform: scale(1);
+}
+.quotes:hover {
+	transition: all 1s ease-in-out;
+	transform: scale(1.2);
+}
+
+hr {
+	border: 2px solid red;
+	border-radius: 30px;
+	max-width: 25%;
+}
+
+/* CSS code for Specialization section... */
+
+.content-img img {
+	transition: all 0.8s ease-in-out;
+	transform: scale(1);
+}
+.content-img img:hover {
+	transition: all 0.8s ease-in-out;
+	transform: scale(1.1);
+}
+
+/* CSS code for Projects section... */
+
+.project_sec {
+	border-radius: 120px 120px 120px 120px;
+	padding-bottom: 50px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card {
+	transition: all 1s ease-in-out;
+	transform: scale(1);
+}
+
+.card:hover {
+	transition: all 1s ease-in-out;
+	transform: scale(1.13);
+}
+
+/* CSS code for Advantages  section... */
+
+.degree_content,
+.cerification_content,
+.expertise {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+}
+.degree hr {
+	max-width: 50%;
+}
+.cerification hr {
+	max-width: 50%;
+}
+.learning {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.learning > div {
+	background-color: rgba(220, 74, 37, 0.118);
+	border-radius: 35%;
+}
+.learning > .box {
+	transition: all 1s ease-in-out;
+	transform: scale(1);
+}
+.learning > .box:hover {
+	transition: all 500ms ease-in-out;
+	border-radius: 15%;
+	transform: scale(1.1);
+}
+
+/* for box-1 */
+
+#box-1 .progress_bar {
+	width: 90px;
+	height: 5px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgb(220, 74, 37);
+	background-color: white;
+}
+
+#box-1 .progress_bar::before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	background: rgb(220, 74, 37);
+	animation: fillProgress 2s linear forwards;
+}
+
+@keyframes fillProgress {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+/* for box-2 */
+
+#box-2 .progress_bar {
+	width: 90px;
+	height: 5px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgb(40, 98, 223);
+	background-color: white;
+}
+
+#box-2 .progress_bar::before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	background: rgb(40, 98, 223);
+	animation: fillProgress2 2s linear forwards;
+}
+
+@keyframes fillProgress2 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+/* for box-3 */
+
+#box-3 .progress_bar {
+	width: 90px;
+	height: 5px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgb(232, 212, 77);
+	background-color: white;
+}
+
+#box-3 .progress_bar::before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	background: rgb(232, 212, 77);
+	animation: fillProgress3 2s linear forwards;
+}
+
+@keyframes fillProgress3 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 60%;
+	}
+}
+
+/* for box-4 */
+
+#box-4 .progress_bar {
+	width: 90px;
+	height: 5px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgb(86, 61, 124);
+	background-color: white;
+}
+
+#box-4 .progress_bar::before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	background: rgb(77, 61, 124);
+	animation: fillProgress4 2s linear forwards;
+}
+
+@keyframes fillProgress4 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+/* for box-5 */
+
+#box-5 .progress_bar {
+	width: 90px;
+	height: 5px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgb(77, 179, 61);
+	background-color: white;
+}
+
+#box-5 .progress_bar::before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	background: rgb(77, 179, 61);
+	animation: fillProgress5 2s linear forwards;
+}
+
+@keyframes fillProgress5 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 55%;
+	}
+}
+
+/* Code for footer section  */
+
+.footer li {
+	list-style: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.footer a {
+	color: black;
+	transition: all 40ms linear;
+}
+
+/* CSS code for B.Tech(Docs) page... */
+
+/* Code for making link of all semester */
+
+.semester {
+	position: sticky;
+	top: 0px;
+	background-color: black;
+}
+
+.semester ul {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0;
+}
+.semester ul li a {
+	text-decoration: none;
+	font-size: larger;
+	/* color: #ecf2ff; */
+}
+
+/* CSS code for the Contact page... */
+
+.contact_left p {
+	padding-left: 50px;
+	font-weight: bolder;
+}
+
+.address:hover {
+	transition: all 1s ease-in-out;
+	transform: scale(1.1);
+}
+
+.contect_no:hover {
+	transition: all 1s ease-in-out;
+	transform: scale(1.1);
+}
+
+.email_id:hover {
+	transition: all 1s ease-in-out;
+	transform: scale(1.1);
+}
